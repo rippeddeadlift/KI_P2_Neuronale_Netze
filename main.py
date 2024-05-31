@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+'''import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import pandas as pd
@@ -38,12 +38,10 @@ from tensorflow.keras import datasets, layers, models
 model = models.Sequential()
 model.summary()
 
-
-
-'''print("Number of training examples: ", X_train.shape[0])
+print("Number of training examples: ", X_train.shape[0])
 print("Number of validation examples: ", X_valid.shape[0])
 print("Image data shape =", X_train[0].shape)
-print("Number of classes =", len(np.unique(y_train)))'''
+print("Number of classes =", len(np.unique(y_train)))
 
 # Plotting histograms of the count of each sign
 def histogram_plot(dataset: np.ndarray, label: str):
@@ -62,4 +60,4 @@ def histogram_plot(dataset: np.ndarray, label: str):
 
 histogram_plot(y_train, "Training examples")
 
-histogram_plot(y_valid, "Validation examples")
+histogram_plot(y_valid, "Validation examples")'''
