@@ -31,8 +31,8 @@ plt.grid(False)
 plt.imshow(X_train_norm[i].squeeze(), cmap = 'gray') # cmap
 
 model = models.Sequential()
-model.add(layers.Flatten())
-model.add(layers.Dense(256, activation='relu', input_shape=(32,32,3)))
+model.add(layers.Flatten(input_shape=(32,32,3)))
+model.add(layers.Dense(256, activation='relu'))
 model.add(layers.Dense(128, activation='relu'))
 model.add(layers.Dropout(0.25))
 model.add(layers.Dense(64, activation='relu'))
